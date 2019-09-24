@@ -1,26 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_create_elem.c                                   :+:    :+:            */
+/*   main.c                                             :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/09/24 11:34:22 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/24 12:24:01 by averheij      ########   odam.nl         */
+/*   Created: 2019/09/24 12:48:08 by averheij       #+#    #+#                */
+/*   Updated: 2019/09/24 13:06:24 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
+#include <stdio.h>
 
-t_list		*ft_create_elem(void *data)
+int		main(void)
 {
-	t_list *tmp;
+	t_list	**begin_list;
+	t_list	*first;
+	t_list	*curr;
 
-	tmp = malloc(sizeof(t_list));
-	if (tmp)
+	first = ft_create_elem("first");
+	begin_list = &first;
+	curr = begin_list[0];
+	while (curr)
 	{
-		(*tmp).data = data;
-		(*tmp).next = 0;
+		printf("Heres one: %s\n", (char*)(*curr).data);
+		curr = (*curr).next;
 	}
-	return (tmp);
+	ft_list_push_back(begin_list, "JK I'm first");
+	curr = begin_list[0];
+	while (curr)
+	{
+		printf("Heres one: %s\n", (char*)(*curr).data);
+		curr = (*curr).next;
+	}
 }
