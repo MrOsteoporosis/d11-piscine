@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/24 12:11:10 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/24 13:09:02 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/24 13:42:57 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 
 void	ft_list_push_back(t_list **begin_list, void *data)
 {
-	t_list	*first;
+	t_list	*last;
+	t_list	*curr;
 
-	first = ft_create_elem(data);
-	if (first)
-	{
-		(*first).next = begin_list[0];
-		begin_list[0] = first;
-	}
+	curr = begin_list[0];
+	while ((*curr).next)
+		curr = (*curr).next;
+	last = ft_create_elem(data);
+	if (last)
+		(*curr).next = last;
 }
