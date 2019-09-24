@@ -6,13 +6,13 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/24 12:21:50 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/24 12:54:01 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/24 14:08:34 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_LIST_H
 # define FT_LIST_H
-#include <stdlib.h>
+# include <stdlib.h>
 
 typedef struct s_list	t_list;
 
