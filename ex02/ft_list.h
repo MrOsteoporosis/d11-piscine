@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/24 11:35:46 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/24 12:52:32 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/24 13:44:42 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ struct	s_list
 };
 
 t_list	*ft_create_elem(void *data);
+void	ft_list_push_front(t_list **begin_list, void *data);
 void	ft_list_push_back(t_list **begin_list, void *data);
 #endif
