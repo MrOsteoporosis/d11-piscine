@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_list_push_back.c                                :+:    :+:            */
+/*   ft_list_push_front.c                               :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/24 12:11:10 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/24 13:09:02 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/24 14:16:31 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-void	ft_list_push_back(t_list **begin_list, void *data)
+void	ft_list_push_front(t_list **begin_list, void *data)
 {
 	t_list	*first;
 

@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/24 12:48:08 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/24 13:49:16 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/24 14:16:36 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int		main(void)
 		printf("Heres one: %s\n", (char*)(*curr).data);
 		curr = (*curr).next;
 	}
-	ft_list_push_back(begin_list, "JK I'm first");
+	ft_list_push_front(begin_list, "JK I'm first");
 	curr = *begin_list;
 	while (curr)
 	{
